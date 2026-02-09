@@ -1,42 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Boilerplate for polaris chip">
-  <base href="/">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Card Demo</title>
+  <script type="module" src="./src/my-card.js"></script>
   <style>
-    :root,
-    html,
     body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
     }
-    polaris-chip {
-      margin: 16px;
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
     }
   </style>
-  <title>polaris-chip / my-card</title>
 </head>
-
 <body>
-  <h1>polaris-chip</h1>
-  <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
-  <polaris-chip title="Faculty and Staff"></polaris-chip>
-  <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
-  <polaris-chip title="Grants and donations"></polaris-chip>
+  <h1>My Cards Demo: 
+    Reflection 4
+  </h1>
+  
+  <div class="container">
+    <!-- Card 1: Mountains example -->
+    <my-card 
+      title="Mountain Landscape"
+      image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+      description=" mountain scenery ."
+      link="https://unsplash.com/photos/mountain">
+    </my-card>
 
-  <h1>my-card</h1>
-  <my-card></my-card>
+    <!-- Card 2: waves -->
+    <my-card 
+      title="Ocean Waves"
+      image="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400"
+      description="ocean waves."
+      link="https://unsplash.com/photos/ocean"
+      fancy>
+    </my-card>
 
-  <!-- this is what is bringing in the definition for this tag -->
-  <script type="module" src="./src/polaris-chip.js"></script>
-  <script type="module" src="./src/my-card.js"></script>
+    <!-- Card 3: City Example -->
+    <my-card 
+      title="City Skyline"
+      image="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400"
+      description="Modern city skyline."
+      link="https://unsplash.com/photos/city">
+    </my-card>
+
+    <!-- Card 4: Trees -->
+    <my-card 
+      title="Forest Trail"
+      image="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400"
+      description="Peaceful forest trail."
+      link="https://unsplash.com/photos/forest"
+      fancy>
+    </my-card>
+
+    <!-- Card 5: Wild West  -->
+    <my-card 
+      title="Desert Sunset"
+      image="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400"
+      description="Wild West Desert Scene"
+      link="https://unsplash.com/photos/desert">
+    
+      
+    </my-card>
+  </div>
+
 </body>
-
 </html>
