@@ -23,6 +23,12 @@
       max-width: 1400px;
       margin: 0 auto;
     }
+
+    my-card[fancy] {
+      --my-card-fancy-bg: #ff0000;
+      --my-card-fancy-border: 2px solid fuchsia;
+      --my-card-fancy-shadow: 10px 5px 5px red;
+    }
   </style>
 </head>
 <body>
@@ -35,44 +41,42 @@
     <my-card 
       title="Mountain Landscape"
       image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
-      description=" mountain scenery ."
       link="https://unsplash.com/photos/mountain">
+      <p> mountain scenery .</p>
     </my-card>
 
     <!-- Card 2: waves -->
     <my-card 
       title="Ocean Waves"
       image="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400"
-      description="ocean waves."
       link="https://unsplash.com/photos/ocean"
       fancy>
+      <p>ocean waves.</p>
     </my-card>
 
     <!-- Card 3: City Example -->
     <my-card 
       title="City Skyline"
       image="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400"
-      description="Modern city skyline."
       link="https://unsplash.com/photos/city">
+      <p>Modern city skyline.</p>
     </my-card>
 
-    <!-- Card 4: Trees -->
+    <!-- Card 4: Tree -->
     <my-card 
       title="Forest Trail"
       image="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400"
-      description="Peaceful forest trail."
       link="https://unsplash.com/photos/forest"
       fancy>
+      <p>Peaceful forest trail.</p>
     </my-card>
 
     <!-- Card 5: Wild West  -->
     <my-card 
       title="Desert Sunset"
       image="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400"
-      description="Wild West Desert Scene"
       link="https://unsplash.com/photos/desert">
-    
-      
+      <p>Wild West Desert Scene</p>
     </my-card>
   </div>
 
